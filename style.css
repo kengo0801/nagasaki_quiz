@@ -1,0 +1,242 @@
+body{
+    font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+    color: #545863;
+    background-color: #EAF6FF;
+    margin: 0;
+    padding: 0;
+}
+
+/* ベース */
+.title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #feab2b;
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.timer{
+    font-size: 48px;
+    font-weight: 500;
+    margin: 10px;
+    text-align: center;
+}
+
+.btn_gr{
+    text-align: center;
+}
+
+.red_btn{
+    background-color: #E84855;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-right: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.blue_btn{
+    background-color: #84ACCE;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* マスク */
+.mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    background-color: rgba(0,0,0, 0.4);
+    z-index: 5;
+}
+.mask.off{
+    display: none;
+}
+
+.mask_btn{
+    border: none;
+    background: transparent;
+    color:white;
+    opacity: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 80%;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 20px;
+    z-index: 6;
+    cursor: pointer;
+}
+
+
+/* スクリーン */
+.screen{
+    background-color: white;
+    width: 330px;
+    height: 330px;
+    border: solid #feab2b;
+    border-radius: 10px;
+    position: absolute;
+    top: 168px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 10;
+}
+
+.screen_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img_off{
+    display: none;
+}
+
+.screen_tytle{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px;
+}
+.screen_tytle.off{
+    display: none;
+}
+
+.screen_subtytle{
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+}
+.screen_subtytle.off{
+    display: none;
+}
+.screen_sentence{
+    font-size: 18px;
+    margin: 10px;
+}
+.screen_sentence.off{
+    display: none;
+}
+
+.circle{
+    position: absolute;
+    top: 168px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 15px #E84855;
+    z-index: 11;
+  }
+  .circle.off{
+    display: none;
+  }
+
+.batsu1{
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+    width: 350px;
+    border:solid 15px #84ACCE;
+    z-index: 11;    
+}
+.batsu1.off{
+    display: none;
+}
+
+.batsu2{
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+    width: 350px;
+    border:solid 15px #84ACCE;
+    z-index: 11;
+}
+.batsu2.off{
+    display: none;
+}
+
+/* ツイートボタン */
+.style_follow_chiico_btn{
+    text-align: right;
+    margin: 20px;
+}
+.style_follow_chiico_btn.off{
+    display: none;
+}
+.style_follow_tano_btn{
+    text-align: right;
+    margin: 20px;
+}
+.style_follow_tano_btn.off{
+    display: none;
+}
+.tweet_btn{
+    border: none;
+    background-color: #1D9BF0;
+    color: white;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 100vh;
+    font-size: smaller;
+    cursor: pointer;
+}
+.style_tweet_btn{
+    text-align: right;
+    margin: 20px;
+}
+.style_tweet_btn.off{
+    opacity: 0;
+}
+
+@media screen and (min-width:850px) {
+    body{
+        background-color: white;
+    }
+    .container{
+        background-color: #EAF6FF;
+        height: 667px;
+        width: 378px;
+        margin: 100px auto;
+        border-radius: 10px;
+    }
+    .screen{
+        top: 268px;
+    }
+    .circle{
+        top: 268px;
+    }
+    .batsu1{
+        top: 420px;
+    }
+    .batsu2{
+        top: 420px;
+    }
+    .mask{
+        width: 378px;
+        height: 667px;
+        top: 100px;
+    }
+}
