@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>chiicoの長崎クイズ</title>
+</head>
+<body>
+<div class="container">
+    <!-- ベース -->
+    <h1 class="title">chiicoの長崎クイズ</h1>
+    <h2 class="timer">00:00</h2>
+    <div class="btn_gr">
+        <button type="button" class="red_btn" id="a">◯</button>
+        <button type="button" class="blue_btn">✕</button>
+    </div>
+
+    <!-- マスク -->
+    <div class="mask off">
+        <button type="button" class="mask_btn">テキスト</button>
+    </div> 
+
+    <!-- スクリーン -->
+    <div class="screen">
+        <div id="js_quiz_img" class="img_off">
+            <img src="" class="screen_img">
+        </div>
+
+        <div class="screen_txtgr">
+            <p class="screen_tytle off">テキスト</p>
+            <p class="screen_subtytle off">
+                ここにテキストが入る
+                ここにテキストが入る
+                ここにテキストが入る
+                ここにテキストが入る
+            </p>
+            <p class="screen_sentence off">
+                ここにテキストが入る
+                ここにテキストが入る
+                ここにテキストが入る
+                ここにテキストが入る
+                ここにテキストが入る
+                ここにテキストが入る
+            </p>
+        </div>
+
+        <div class="style_follow_chiico_btn off">
+            <a href="https://twitter.com/chiicoLab?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @chiicoLab</a>
+        </div>
+
+        <div class="style_follow_tano_btn off">
+            <a href="https://twitter.com/nigaoe_Art_Tano?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @nigaoe_Art_Tano</a>
+        </div>
+
+        <div class="style_tweet_btn off">
+            <button class="tweet_btn"><i class="fab fa-twitter"></i>ツイートする</button>
+        </div>
+
+    </div>
+    <div class="circle off"></div>
+    <div class="batsu1 off"></div>
+    <div class="batsu2 off"></div> 
+
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="script.js"></script>    
+</div>
+</body>
+</html>
